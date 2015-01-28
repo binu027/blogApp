@@ -1,0 +1,7 @@
+<% @users.each do |user| %>
+  <%= user.name %>
+  <%= user.email %>
+  <%= link_to 'delete', edit_user_registration_path(method: :delete) %>
+  <%= link_to 'view', user_show_path(user) %>
+  <br />
+<% end %>
